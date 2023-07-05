@@ -1,0 +1,11 @@
+.right-column{
+  width: 22.73vw;
+  height: 100vh;
+  position: relative;
+}
+
+.right-column.menu-open .menu{
+  transform: translateX(-100%);
+  visibility: visible;
+}
+

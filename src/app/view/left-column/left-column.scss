@@ -1,0 +1,10 @@
+.left-column{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 22.70vw);
+  height: 100vh;
+  background: url(../../../assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

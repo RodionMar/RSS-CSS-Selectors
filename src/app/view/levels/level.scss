@@ -1,0 +1,764 @@
+.level-title{
+  text-align: center;
+  font-size: 2.18vw;
+  line-height: 3.15vw;
+  font-weight: 700;
+  margin-top: 0.91vw;
+  color: #e0d57c;
+}
+
+.game{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 11.52vw;
+  margin-top: 15px;
+  position: relative;
+  div{
+    width: 5.03vw;
+    height: 5.03vw;
+    position: absolute;
+    left: -5.03vw;
+    animation-fill-mode: forwards;
+    transition: transform 0.25s;
+      &.hovered{
+        transform: scale(1.25);
+      }
+  }
+  &.first-game{
+    div{
+      background: url(../../../assets/images/pink-bird.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation-name: first-game-with-one-bird;
+      animation-duration: 4s;
+      animation-delay: 0.2s;
+      cursor: pointer;
+      
+    }
+    &.completed{
+      div{
+        animation-name: completed-first-game-with-one-bird;
+      }
+    }
+  }
+  &.second-game{
+    div{
+      background: url(../../../assets/images/pink-bird.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      &:first-of-type{
+        animation-name: game-with-two-birds-first-bird;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+      }
+      &:last-of-type{
+        animation-name: game-with-two-birds-second-bird;
+        animation-duration: 4s;
+        animation-delay: 0.4s;
+      }
+    }
+    &.completed{
+      div{
+        &:first-of-type{
+          animation-name: completed-game-with-two-birds-first-bird;
+        }
+        &:last-of-type{
+          animation-name: completed-game-with-two-birds-second-bird;
+        }
+      }
+    }
+  }
+  &.third-game{
+    div{
+      background: url(../../../assets/images/pink-bird.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      &:first-of-type{
+        animation-name: game-with-three-birds-first-bird;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+      }
+      &#yellow{
+        background: url(../../../assets/images/yellow-bird.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation-name: game-with-three-birds-second-bird;
+        animation-duration: 4s;
+        animation-delay: 0.4s;
+      }
+      &:last-of-type{
+        animation-name: game-with-three-birds-third-bird;
+        animation-duration: 4s;
+        animation-delay: 0.6s;
+      }
+    }
+    &.completed{
+      div{
+        &:first-of-type{
+          animation-name: completed-game-with-three-birds-first-bird;
+        }
+        &#yellow{
+          animation-name: completed-game-with-three-birds-second-bird;
+        }
+        &:last-of-type{
+          animation-name: completed-game-with-three-birds-third-bird;
+        }
+      }
+    }
+  }
+  &.fourth-game{
+    div{
+      background: url(../../../assets/images/pink-bird.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      &:first-of-type{
+        animation-name: game-with-three-birds-first-bird;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+      }
+      &:nth-of-type(2){
+        animation-name: game-with-three-birds-second-bird;
+        animation-duration: 4s;
+        animation-delay: 0.4s;
+      }
+      &.red{
+        background: url(../../../assets/images/red-bird.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation-name: game-with-three-birds-third-bird;
+        animation-duration: 4s;
+        animation-delay: 0.6s;
+      }
+    }
+    &.completed{
+      div{
+        &:first-of-type{
+          animation-name: completed-game-with-three-birds-first-bird;
+        }
+        &:nth-of-type(2){
+          animation-name: completed-game-with-three-birds-second-bird;
+        }
+        &.red{
+          animation-name: completed-game-with-three-birds-third-bird;
+        }
+      }
+    }
+  }
+  &.fifth-game{
+    div{
+      background: url(../../../assets/images/pink-bird.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      &:first-of-type{
+        animation-name: game-with-four-birds-first-bird;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+      }
+      &.green{
+        animation-name: game-with-four-birds-second-bird;
+        background: url(../../../assets/images/green-bird.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation-duration: 4s;
+        animation-delay: 0.4s;
+      }
+      &:nth-of-type(3){
+        animation-name: game-with-four-birds-third-bird;
+        animation-duration: 4s;
+        animation-delay: 0.6s;
+      }
+      &#blue{
+        background: url(../../../assets/images/blue-bird.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation-name: game-with-four-birds-fourth-bird;
+        animation-duration: 4s;
+        animation-delay: 0.8s;
+      }
+    }
+    &.completed{
+      div{
+        &:first-of-type{
+          animation-name: completed-game-with-four-birds-first-bird;
+        }
+        &.green{
+          animation-name: completed-game-with-four-birds-second-bird;
+        }
+        &:nth-of-type(3){
+          animation-name: completed-game-with-four-birds-third-bird;
+        }
+        &#blue{
+          animation-name: completed-game-with-four-birds-fourth-bird;
+        }
+      }
+    }
+  }
+  &.sixth-game{
+    div{
+      cursor: pointer;
+      &.green{
+        background: url(../../../assets/images/green-bird.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation-name: game-with-three-birds-first-bird;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+      }
+      &.red{
+        background: url(../../../assets/images/red-bird.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation-name: game-with-three-birds-second-bird;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+      }
+      &#blue{
+        background: url(../../../assets/images/blue-bird.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation-name: game-with-three-birds-third-bird;
+        animation-duration: 4s;
+        animation-delay: 0.6s;
+      }
+    }
+    &.completed{
+      div{
+        &.green{
+          animation-name: completed-game-with-three-birds-first-bird;
+        }
+        &.red{
+          animation-name: completed-game-with-three-birds-second-bird;
+        }
+        &#blue{
+          animation-name: completed-game-with-three-birds-third-bird;
+        }
+      }
+    }
+  }
+  &.seventh-game{
+    div{
+      background: url(../../../assets/images/pink-bird.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      &:first-of-type{
+        animation-name: game-with-three-birds-first-bird;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+      }
+      &:nth-of-type(2){
+        animation-name: game-with-three-birds-second-bird;
+        animation-duration: 4s;
+        animation-delay: 0.4s;
+      }
+      &:last-of-type{
+        animation-name: game-with-three-birds-third-bird;
+        animation-duration: 4s;
+        animation-delay: 0.6s;
+      }
+    }
+    &.completed{
+      div{
+        &:first-of-type{
+          animation-name: completed-game-with-three-birds-first-bird;
+        }
+        &:nth-of-type(2){
+          animation-name: completed-game-with-three-birds-second-bird;
+        }
+        &:last-of-type{
+          animation-name: completed-game-with-three-birds-third-bird;
+        }
+      }
+    }
+  }
+  &.eighth-game{
+    div{
+      background: url(../../../assets/images/pink-bird.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      &:first-of-type{
+        animation-name: game-with-five-birds-first-bird;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+      }
+      &:nth-of-type(2){
+        animation-name: game-with-five-birds-second-bird;
+        animation-duration: 4s;
+        animation-delay: 0.4s;
+      }
+      &:nth-of-type(3){
+        animation-name: game-with-five-birds-third-bird;
+        animation-duration: 4s;
+        animation-delay: 0.6s;
+      }
+      &:nth-of-type(4){
+        animation-name: game-with-five-birds-fourth-bird;
+        animation-duration: 4s;
+        animation-delay: 0.8s;
+      }
+      &:last-of-type{
+        animation-name: game-with-five-birds-fifth-bird;
+        animation-duration: 4s;
+        animation-delay: 1s;
+      }
+    }
+    &.completed{
+      div{
+        &:first-of-type{
+          animation-name: completed-game-with-five-birds-first-bird;
+        }
+        &:nth-of-type(2){
+          animation-name: completed-game-with-five-birds-second-bird;
+        }
+        &:nth-of-type(3){
+          animation-name: completed-game-with-five-birds-third-bird;
+        }
+        &:nth-of-type(4){
+          animation-name: completed-game-with-five-birds-fourth-bird;
+        }
+        &:last-of-type{
+          animation-name: completed-game-with-five-birds-fifth-bird;
+        }
+      }
+    }
+  }
+  &.ninth-game{
+    div{
+      background: url(../../../assets/images/red-bird.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      &:first-of-type{
+        animation-name: game-with-three-birds-first-bird;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+      }
+      &:nth-of-type(2){
+        animation-name: game-with-three-birds-second-bird;
+        animation-duration: 4s;
+        animation-delay: 0.4s;
+      }
+      &:last-of-type{
+        animation-name: game-with-three-birds-third-bird;
+        animation-duration: 4s;
+        animation-delay: 0.6s;
+      }
+    }
+    &.completed{
+      div{
+        &:first-of-type{
+          animation-name: completed-game-with-three-birds-first-bird;
+        }
+        &:nth-of-type(2){
+          animation-name: completed-game-with-three-birds-second-bird;
+        }
+        &:last-of-type{
+          animation-name: completed-game-with-three-birds-third-bird;
+        }
+      }
+    }
+  }
+  &.tenth-game{
+    div{
+      background: url(../../../assets/images/green-bird.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      &:first-of-type{
+        animation-name: game-with-three-birds-first-bird;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+      }
+      &:nth-of-type(2){
+        animation-name: game-with-three-birds-second-bird;
+        animation-duration: 4s;
+        animation-delay: 0.4s;
+      }
+      &:last-of-type{
+        animation-name: game-with-three-birds-third-bird;
+        animation-duration: 4s;
+        animation-delay: 0.6s;
+      }
+    }
+    &.completed{
+      div{
+        &:first-of-type{
+          animation-name: completed-game-with-three-birds-first-bird;
+        }
+        &:nth-of-type(2){
+          animation-name: completed-game-with-three-birds-second-bird;
+        }
+        &:last-of-type{
+          animation-name: completed-game-with-three-birds-third-bird;
+        }
+      }
+    }
+  }
+}
+
+// Animation for 1 birds
+@keyframes first-game-with-one-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% - 2.265vw);
+  }
+}
+
+@keyframes completed-first-game-with-one-bird {
+  from {
+    left: calc(50% - 2.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+// Animation for 2 birds
+@keyframes game-with-two-birds-first-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% + 3.265vw);
+  }
+}
+
+@keyframes game-with-two-birds-second-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% - 7.265vw);
+  }
+}
+
+@keyframes completed-game-with-two-birds-first-bird {
+  from {
+    left: calc(50% + 3.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+@keyframes completed-game-with-two-birds-second-bird {
+  from {
+    left: calc(50% - 7.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+// Animation for 3 birds
+@keyframes game-with-three-birds-first-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% + 4.265vw);
+  }
+}
+
+@keyframes game-with-three-birds-second-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% - 2.265vw);
+  }
+}
+
+@keyframes game-with-three-birds-third-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% - 8.265vw);
+  }
+}
+
+@keyframes completed-game-with-three-birds-first-bird {
+  from {
+    left: calc(50% + 4.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+@keyframes completed-game-with-three-birds-second-bird {
+  from {
+    left: calc(50% - 2.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+@keyframes completed-game-with-three-birds-third-bird {
+  from {
+    left: calc(50% - 8.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+// Animation for 4 birds
+@keyframes game-with-four-birds-first-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% + 10.265vw);
+  }
+}
+
+@keyframes game-with-four-birds-second-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% + 2.265vw);
+  }
+}
+
+@keyframes game-with-four-birds-third-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% - 6.265vw);
+  }
+}
+
+@keyframes game-with-four-birds-fourth-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% - 15.265vw);
+  }
+}
+
+@keyframes completed-game-with-four-birds-first-bird {
+  from {
+    left: calc(50% + 10.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+@keyframes completed-game-with-four-birds-second-bird {
+  from {
+    left: calc(50% + 2.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+@keyframes completed-game-with-four-birds-third-bird {
+  from {
+    left: calc(50% - 6.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+@keyframes completed-game-with-four-birds-fourth-bird {
+  from {
+    left: calc(50% - 15.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+// Animation for 5 birds
+@keyframes game-with-five-birds-first-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% + 10.265vw);
+  }
+}
+
+@keyframes game-with-five-birds-second-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% + 4.265vw);
+  }
+}
+
+@keyframes game-with-five-birds-third-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% - 2.265vw);
+  }
+}
+
+@keyframes game-with-five-birds-fourth-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% - 8.265vw);
+  }
+}
+
+@keyframes game-with-five-birds-fifth-bird {
+  from {
+    left: 0%;
+  }
+  
+  to {
+    left: calc(50% - 14.265vw);
+  }
+}
+
+@keyframes completed-game-with-five-birds-first-bird {
+  from {
+    left: calc(50% + 10.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+@keyframes completed-game-with-five-birds-second-bird {
+  from {
+    left: calc(50% + 4.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+@keyframes completed-game-with-five-birds-third-bird {
+  from {
+    left: calc(50% - 2.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+@keyframes completed-game-with-five-birds-fourth-bird {
+  from {
+    left: calc(50% - 8.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+@keyframes completed-game-with-five-birds-fifth-bird {
+  from {
+    left: calc(50% - 14.265vw);
+  }
+  
+  to {
+    left: calc(100% + 6vw);
+  }
+}
+
+pre{
+  margin: 0;
+  code.hljs {
+    display: flex;
+    overflow-x: hidden;
+    padding: 0;
+    background: none;
+    & > span {
+      display: block;
+      font-size: 0.85vw;
+      font-weight: 400;
+      line-height: 1.27vw;
+      &:nth-of-type(n){
+        padding-left: 1.21vw;
+      }
+      &:first-of-type, &:last-of-type{
+        padding-left: 0;
+      }
+      &.hovered{
+        color: rgba(255,255,255,.7);
+      }
+    }
+}
+}
+
+.level-html-markup{
+  color: rgba(255,255,255,.3);
+  font-size: 0.85vw;
+  font-weight: 400;
+  line-height: 1.27vw;
+  transition: color 0.25s;
+  cursor: default;
+  div{
+    padding-left: 1.21vw;
+    &.hovered{
+      color: rgba(255,255,255,.7);
+    }
+  }
+}

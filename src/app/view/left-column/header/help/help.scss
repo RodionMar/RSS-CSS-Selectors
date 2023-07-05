@@ -1,0 +1,10 @@
+.help{
+  font-size: 1.45vw;
+  color: rgba(139, 190, 162, 0.5);
+  cursor: pointer;
+  transition: color 0.2s;
+  font-weight: 400;
+  &:hover {
+    color: #fff;
+  }
+}

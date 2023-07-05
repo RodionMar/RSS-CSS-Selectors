@@ -1,0 +1,58 @@
+.editor{
+  width: 49.61vw;
+  height: 19.96vw;
+  display: flex;
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0.36vw;
+  background: rgb(71, 37, 37);
+  border-radius: 0.30vw;
+  &.error{
+    animation: error .1s 5;
+  }
+
+  @keyframes error {
+    0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-5px);
+  }
+  50% {
+      transform: translateX(0);
+  }
+  75% {
+      transform: translateX(5px);
+  }
+  }
+}
+
+.file-name{
+  opacity: 0.5;
+}
+
+.numbers-line{
+  display: flex;
+  flex-direction: column;
+  padding: 0.61vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.61vw;
+  line-height: 150%;
+  font-size: 0.85vw;
+  font-weight: 400;
+  color: #999;
+  text-align: right;
+  height: 16.41vw;
+  &--css{
+    background: #DDD;
+  }
+  &--html{
+    top: 0;
+    border-right: 0.06vw solid rgba(255, 255, 255, 0.272);
+  }
+}

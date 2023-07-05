@@ -1,0 +1,32 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3.03vw;
+  background: rgb(71, 37, 37);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  font-size: 1.45vw;
+  padding: 0.61vw 0;
+}
+
+.footer-image{
+  display: inline-block;
+  width: 3.03vw;
+  height: 3.03vw;
+  cursor: pointer;
+}
+
+.github-image{
+  background: url(../../../../assets/images/github.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.course-logo{
+  background: url(../../../../assets/images/rs_school_js.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
