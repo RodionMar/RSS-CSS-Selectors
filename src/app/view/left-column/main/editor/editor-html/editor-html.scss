@@ -1,0 +1,26 @@
+.editor-html{
+  width: 50%;
+}
+
+.editor-html-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.61vw 0.91vw;;
+  font-size: 0.85vw;
+  color: #fff;
+  background: #1a5e10;
+  border-top: 0.06vw solid rgba(255, 255, 255, 0.272);
+  border-bottom: 0.06vw solid rgba(255, 255, 255, 0.272);
+  border-right: 0.06vw solid rgba(255, 255, 255, 0.272);
+  border-radius: 0 0.30vw 0 0;
+}
+
+.editor-html-body{
+  height: 17.60vw;
+  border-radius: 0 0 0 0.30vw ;
+  position: relative;
+  border: 0.06vw solid rgba(255, 255, 255, 0.272);
+  border-radius: 0 0 0.3vw 0;
+  padding: 0.61vw 0.61vw 0.61vw 2.79vw;
+  box-sizing: border-box;
+}

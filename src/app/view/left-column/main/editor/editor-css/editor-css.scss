@@ -1,0 +1,42 @@
+.editor-css{
+  width: 50%;
+}
+
+.editor-css-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.61vw 0.91vw;
+  font-size: 0.85vw;
+  font-weight: 400;
+  color: #fff;
+  background: #1a5e10;
+  border-top: 0.06vw solid rgba(255, 255, 255, 0.272);
+  border-bottom: 0.06vw solid rgba(255, 255, 255, 0.272);
+  border-left: 0.06vw solid rgba(255, 255, 255, 0.272);
+  border-radius: 0.30vw 0 0 0;
+}
+
+.editor-css-body{
+  height: 17.60vw;
+  background: #efefef;
+  border-radius: 0 0 0 0.30vw ;
+  position: relative;
+  padding: 0.61vw 0.61vw 0.61vw 2.79vw;
+  box-sizing: border-box;
+  *{
+    font-size: 0.85vw;
+    font-weight: 400;
+    line-height: 1.27vw;
+  }
+  .editor-css-body-styles{
+    max-width: 2.85vw;
+    color: #999;
+  }
+  .editor-css-enter-button{
+    position: absolute;
+    top: 0.48vw;
+    right: 0.5vw;
+    border: 0.06vw solid #000;
+    cursor: pointer;
+  }
+}

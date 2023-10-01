@@ -1,0 +1,21 @@
+.editor-css-input{
+  background: rgba(62,203,255,.3);
+  border: none;
+  outline: none;
+  width: calc(100% - 3.5vw);
+  background: none;
+  font-size: 0.85vw;
+  padding: 0;
+
+  // https://ru.w3docs.com/snippets/css/kak-sozdat-migaiushchuiu-svetiashchuiusia-knopku-s-pomoshchiu-animatsii-v-css3.html
+  -webkit-animation: inputAnimation 500ms infinite;
+      -moz-animation: inputAnimation 500ms infinite;
+      -o-animation: inputAnimation 500ms infinite;
+      animation: inputAnimation 500ms infinite;
+
+  @keyframes inputAnimation {
+    0% { background-color: #0091b234; }
+      50% { background-color: #21c8ed30;  }
+      100% { background-color: #0091b236; }
+  }
+}

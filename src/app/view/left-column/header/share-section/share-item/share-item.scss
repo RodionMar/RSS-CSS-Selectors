@@ -1,0 +1,32 @@
+.share-item{
+  display: inline-block;
+  width: 1.51vw;
+  height: 1.51vw;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.share-mail{
+  background: url(../../../../../../assets/images/icon-email.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.share-facebook{
+  background: url(../../../../../../assets/images/icon-facebook.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.share-twitter{
+  background: url(../../../../../../assets/images/icon-twitter.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

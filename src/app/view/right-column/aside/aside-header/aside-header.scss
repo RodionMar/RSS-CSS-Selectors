@@ -1,0 +1,33 @@
+.aside-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.aside-level{
+  color: #e0d57c;
+  font-size: 1.45vw;
+  font-weight: 700;
+}
+
+.aside-check-mark{
+  display: inline-block;
+  margin-left: 0.91vw;
+  width: 0.73vw;
+  height: 1.21vw;
+  border: solid 0.18vw #e0d57c;
+  border-width: 0 0.24vw 0.24vw 0;
+  transform: rotate(40deg);
+  opacity: 0.6;
+}
+
+.aside-header-nav{
+  display: flex;
+  column-gap: 1.21vw;
+}
+
+.aside-header-level-nav{
+  max-height: 1.82vw;
+  margin-right: 2.5vw;
+}
